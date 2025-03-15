@@ -1,0 +1,11 @@
+const win = require('node:os') 
+
+console.log('Informacion del Sistema operativo')
+console.log('-----------------------------------')
+console.log('Nombre del sistema operativo:', win.platform())
+console.log('Version del sistema operativo:', win.release())
+console.log('arquitectura del sistema operativo:', win.arch())
+console.log('CPus:', win.cpus())
+console.log('Memoria total:', win.totalmem()/1024/1024)
+console.log('Memoria libre:', win.freemem()/1024/1024)
+console.log('uptime:', win.uptime()/60/60)
